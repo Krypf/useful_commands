@@ -1,4 +1,4 @@
-NAME_APP=Visual Studio Code
+NAME_APP="Visual Studio Code"
 APP_PATH="/Applications/$NAME_APP.app"
 interval="5";
 
