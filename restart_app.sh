@@ -1,4 +1,5 @@
 #!/bin/zsh
+# https://chat.openai.com/c/cedbd932-3df7-4c9e-96b2-1840b9356516
 
 # Specify the name or command of the application to restart
 #NAME_APP="your_application"
@@ -8,13 +9,17 @@ read -p "Enter the name or abbreviation of the application: " _input
 interval="4";
 
 # echo "$_input"
-# Check if the input is "brave" and set the NAME_APP accordingly
+# Check if the input is ready and set the NAME_APP and PROCESS accordingly
 if [[ "$_input" == "brave" || "$_input" == "bb" ]]; then
 	NAME_APP="Brave Browser";
     PROCESS="Brave Browser";
 elif [[ "$_input" == "firefox" || "$_input" == "ff" ]]; then
     NAME_APP="Firefox";
     PROCESS="Firefox";
+    # interval="5";
+elif [[ "$_input" == "DeepL" || "$_input" == "ll" ]]; then
+    NAME_APP="DeepL";
+    PROCESS="DeepL";
     # interval="5";
 elif [[ "$_input" == "code" || "$_input" == "vs" ]]; then
     # NAME_APP="Visual Studio Code";
